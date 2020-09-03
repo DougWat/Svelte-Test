@@ -473,7 +473,7 @@ var app = (function () {
     }
 
     const app = new App({
-    	target: document.querySelector(".app"),
+    	target: document.body,
     	props: {
     		name: 'world'
     	}
