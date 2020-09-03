@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "..\\..\\App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\nexport let name;\nlet count = 0;\n\nfunction handleClick() {\n  count += 1;\n}\n</script>\n\n<style type=\"text/scss\">.cool-card {\n  padding: 30px;\n  max-width: 300px;\n  background-color: #e6e6f0;\n  border-radius: 10px; }\n  .cool-card .title {\n    text-align: center; }\n  .cool-card button {\n    border: none;\n    padding: 10px 20px;\n    border-radius: 5px;\n    transition: color 200ms, background-color 200ms; }\n    .cool-card button:hover {\n      background-color: gray;\n      color: white;\n      cursor: pointer; }\n</style>\n\n<div class=\"cool-card\">\n  <h2 class=\"title\">This is a card :)</h2>\n  <hr/>\n  <p>\n    This is a bit of text that might appear in the card. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, officiis. Aspernatur error fugit ullam aut dolorum mollitia similique, consequatur quos ad explicabo voluptatibus facere possimus! Ducimus esse dolore soluta impedit?\n  </p>\n  <button on:click={handleClick}>I'm a button :^) Ya clicked me {count} {count === 1 ? 'time' : 'times'}</button>\n</div>\n"
+  ],
+  "names": [],
+  "mappings": "AASwB,UAAU,8BAAC,CAAC,AAClC,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,KAAK,CAChB,gBAAgB,CAAE,OAAO,CACzB,aAAa,CAAE,IAAI,AAAE,CAAC,AACtB,yBAAU,CAAC,MAAM,eAAC,CAAC,AACjB,UAAU,CAAE,MAAM,AAAE,CAAC,AACvB,yBAAU,CAAC,MAAM,eAAC,CAAC,AACjB,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,IAAI,CAAC,IAAI,CAClB,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,KAAK,CAAC,KAAK,CAAC,CAAC,gBAAgB,CAAC,KAAK,AAAE,CAAC,AAClD,yBAAU,CAAC,qBAAM,MAAM,AAAC,CAAC,AACvB,gBAAgB,CAAE,IAAI,CACtB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,OAAO,AAAE,CAAC"
+}
